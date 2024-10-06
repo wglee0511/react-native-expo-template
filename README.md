@@ -1,50 +1,39 @@
-# Welcome to your Expo app 👋
+# React-Native-Expo-Template
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## 버전
 
-## Get started
+- Node >= 20 (20.3.0)
+- Npm >= 9 (9.6.7)
 
-1. Install dependencies
+## 설치방법
 
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```javascript
+// 패키지 파일 다운로드
+npm install
+// 설치되지 않는 경우
+npm install --legacy-peer-deps
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 실행방법
 
-## Learn more
+### Web
+```javascript
+npm run web
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+### Android
+```javascript
+npm run android
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### iOS
+```javascript
+npm run ios
+// 선택화면에서
+i
+```
+#### iOS 실행 에러 발생시
+1. code 60 에러
+- 시뮬레이터를 완전히 종료
+- 다시 실행코드를 기입하여도 실행되지 않을시
+- Mac --- > System Settings --- > Storage --- > Developer --- > Delete Xcode Caches
