@@ -1,41 +1,11 @@
-/* eslint-disable react/no-unstable-nested-components */
-import React from "react";
+/* eslint-disable global-require */
 
-import { useColorScheme } from "react-native";
+import "react-native-reanimated";
 
-import { Tabs } from "expo-router";
+import { View } from "react-native";
 
-import { TabBarIcon } from "@/components/navigation/TabBarIcon";
-import { Colors } from "@/constants/Colors";
+// Prevent the splash screen from auto-hiding before asset loading is complete.
 
-export default function TabLayout() {
-  const colorScheme = useColorScheme();
-
-  return (
-    <Tabs
-      screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? "light"].tint,
-        headerShown: false
-      }}
-    >
-      <Tabs.Screen
-        name="index"
-        options={{
-          title: "Home",
-          tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? "home" : "home-outline"} color={color} />
-          )
-        }}
-      />
-      <Tabs.Screen
-        name="explore"
-        options={{
-          title: "Explore",
-          tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? "code-slash" : "code-slash-outline"} color={color} />
-          )
-        }}
-      />
-    </Tabs>
-  );
+export default function App() {
+  return <View />;
 }
