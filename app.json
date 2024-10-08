@@ -15,7 +15,15 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.react-native-template.ranazang"
+      "bundleIdentifier": "com.react-native-template.ranazang",
+      "plugins": [
+        [
+          "expo-screen-orientation",
+          {
+            "initialOrientation": "DEFAULT"
+          }
+        ]
+      ]
     },
     "android": {
       "adaptiveIcon": {

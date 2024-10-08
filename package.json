@@ -41,7 +41,8 @@
     "recoil": "^0.7.7",
     "recoil-persist": "^5.1.0",
     "expo-image": "~1.13.0",
-    "react-native-svg": "15.2.0"
+    "react-native-svg": "15.2.0",
+    "expo-screen-orientation": "~7.0.5"
   },
   "devDependencies": {
     "@babel/core": "^7.24.0",
