@@ -1,4 +1,4 @@
-# React-Native-Expo-Template
+# 지뢰 찾기 앱
 
 ## 버전
 
@@ -50,3 +50,59 @@ npm run ios
 
 - reacttotron 설치
 - app/index.js의 주석해제 (웹은 현재 사용불가)
+
+## 코드스니펫 설정 (선택)
+
+### 설정방법
+
+- 상단 애플로고 옆 Code 클릭 (Mac 기준 VsCode)
+- 기본설정 내 사용자 코드 조각 구성 선택
+- typescript.json / typescriptreact.json 내 아래 코드를 추가 혹은 설정
+
+```
+{
+  "mobile-ui text component": {
+			"prefix": "mtext",
+			"body": [
+				"<Text",
+				"  fontSize=$1",
+				"  fontWeight=$2",
+				"  color={COLORS.$3}",
+				">",
+				"  $4",
+				"</Text>"
+			]
+		},
+  "mobile-ui divider component": {
+			"prefix": "mdivider",
+			"body": [
+				"<Divider",
+				"  horizontal={$1}",
+				"  vertical={$2}",
+				"  backgroundColor={$3}",
+				"/>",
+			]
+		},
+}
+```
+
+### 사용법
+
+- 필요한 컴포넌트의 prefix를 입력
+
+```
+// ex text component
+mtext
+```
+
+- 아래와 같이 자동완성 되며 import 하여 사용
+
+```
+    <Text
+      fontSize=
+      fontWeight=
+      color={COLORS.}
+    >
+
+    </Text>
+```
