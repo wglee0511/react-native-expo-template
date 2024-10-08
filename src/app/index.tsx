@@ -1,9 +1,11 @@
 import { useEffect } from "react";
 
-import { Text, View } from "react-native";
+import { View } from "react-native";
 
 import * as ScreenOrientation from "expo-screen-orientation";
 import { RecoilRoot } from "recoil";
+
+import RootRouter from "@/screens/RootRouter";
 
 // if (__DEV__) {
 //   import("../../ReactotronConfig").then(() => console.log("Reactotron Config"));
@@ -20,12 +22,10 @@ export default function Index() {
     <RecoilRoot>
       <View
         style={{
-          flex: 1,
-          justifyContent: "center",
-          alignItems: "center"
+          flex: 1
         }}
       >
-        <Text>Edit app/index.tsx to edit this screen.</Text>
+        <RootRouter />
       </View>
     </RecoilRoot>
   );
