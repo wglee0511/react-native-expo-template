@@ -1,4 +1,4 @@
-# 지뢰 찾기 앱
+# 템플릿
 
 ## 버전
 
@@ -83,6 +83,21 @@ npm run ios
 				"/>",
 			]
 		},
+	"mobile-ui button component": {
+			"prefix": "mbutton",
+			"body": [
+				"<Button",
+				"  fontSize={$1}",
+				"  fontWeight=$2",
+				"  width=$3",
+				"  height=$4",
+				"  buttonColor={$5}",
+				"  onPress={$6}",
+				">",
+				"  $7",
+				"</Button>"
+			]
+		},
 }
 ```
 
@@ -105,4 +120,5 @@ mtext
     >
 
     </Text>
+
 ```
