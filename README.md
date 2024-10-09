@@ -1,5 +1,9 @@
 # 템플릿
 
+## 템플릿
+
+- 해당 주소에 템플릿을 만들어 사용했습니다.[템플릿](https://github.com/wglee0511/react-native-expo-template)
+
 ## 버전
 
 - Node >= 20 (20.3.0)
@@ -17,7 +21,8 @@ npm install --legacy-peer-deps
 
 ## 실행방법
 
-- 아래 방법으로 하나의 서버가 켜지면 w / a / i 로 각각 시행가능
+- 아래 방법으로 하나의 서버가 켜지면 w / a / i 로 각각 시행
+  가능
 
 ### Web
 
